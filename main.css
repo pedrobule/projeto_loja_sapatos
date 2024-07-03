@@ -1,0 +1,123 @@
+* {
+    margin 0;
+    padding 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.conteiner {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+header {
+    background-color: #192a56;
+    padding-top: 16px 0;
+    color: #fff;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header > .conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.conteiner-flex {
+    display: flex;
+}
+
+#sobre-loja img {
+    max-width: 400px;
+    margin-right: 16px;
+}
+
+section {
+    padding: 32px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.lista-sapatos {
+    flex-wrap: wrap;
+    padding-top: 16px;
+}
+
+.lista-sapatos li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+    margin-right: 20px;
+}
+
+.lista-sapatos li img {
+    max-width: 100%;
+}
+
+.lista-sapatos li h3 {
+    margin: 10px 0;
+}
+
+.item-central {
+    margin: 0 5%;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: blue;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 641px) {
+    header > .conteiner {
+        display: block;
+    }
+
+    section .conteiner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteiner .conteiner-flex img {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
