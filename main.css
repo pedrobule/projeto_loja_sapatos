@@ -73,15 +73,16 @@ section h2 {
     padding-top: 16px;
 }
 
-.lista-sapatos li {
+.conteiner .lista-sapatos li {
     list-style: none;
-    max-width: 30%;
+    max-width: 21%;
     margin-bottom: 24px;
     margin-right: 20px;
+    float: left;
 }
 
-.lista-sapatos li img {
-    max-width: 100%;
+.conteiner .lista-sapatos li img {
+    width: 100%;
 }
 
 .lista-sapatos li h3 {
@@ -105,7 +106,29 @@ button {
     border-radius: 6px;
 }
 
-@media screen and (max-width: 641px) {
+@media screen and (max-width: 641px) and (max-width: 1023px) {
+    header > .conteiner {
+        display: flex;
+    }
+
+    section .conteiner {
+        display: block;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .conteiner .lista-sapatos li {
+        list-style: none;
+        max-width: 40%;
+        margin-bottom: 26px;
+        margin-right: 40px;
+        float: left;
+    }
+
+
+}
+
+@media screen and (max-width: 640px) {
     header > .conteiner {
         display: block;
     }
@@ -113,6 +136,7 @@ button {
     section .conteiner {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
     .conteiner .conteiner-flex img {
@@ -120,4 +144,9 @@ button {
         height: auto;
     }
 
+    .conteiner .lista-sapatos li {
+        list-style: none;
+        max-width: 100%;
+    }
 }
+
